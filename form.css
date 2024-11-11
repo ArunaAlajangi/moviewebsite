@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    min-height:100vh
+}
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding:20px 100px;
+    display: flex;
+    background-color: rgb(255, 136, 0);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+}
+.log{
+    font-size:2em ;
+    color: rgb(253, 248, 248);
+    user-select: none;
+
+}
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight:500px ;
+    margin-left: 40px;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background:white ;
+    left:0;
+    bottom: -6px;
+    border-radius: 5px;
+    transform:scaleX(0);
+    transition: transform .5s;
+    transform-origin:right ;
+
+
+
+}
+.navigation a :hover::after{
+    transform:scaleX(1);
+    transform-origin:left;
+
+
+
+}
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: aliceblue;
+    font-weight: 500;
+    margin-left: 40px;
+    transition:  .5s;
+
+
+}
+
+.navigation .btnLogin-popup:hover{
+    background: white;
+    color: #162938;
+}
+/* .wrapper{
+    position: relative; 
+    width:350px ;
+    height:450px;
+    background: transparent;
+    border: 2px solid orange;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px black;
+    justify-content: center; 
+    align-items: center;
+    display:inline; */
+
+    
+} 
+.wrapper .form-box {
+    
+     
+ 
+
+}
+.form-box h2{
+    width: 100%;
+    position: relative;
+    height: 50px;
+    border-bottom: 2px solid black;
+
+}
